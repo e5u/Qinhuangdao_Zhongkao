@@ -1,0 +1,83 @@
+INPUT
+{
+    FONT-SIZE: 10.5pt
+}
+P
+{
+    FONT-SIZE: 10.5pt;
+    MARGIN: 0px
+}
+TABLE
+{
+    FONT-SIZE: 10.5pt;
+    MARGIN: 0pt
+}
+body         { background-image: url('images/cnvbkgnd.jpg'); font-size: 10.5pt; 
+               background-color: #fefefe; margin-left: 10pt; margin-right: 0pt; 
+               margin-top: 0pt; margin-bottom: 0pt; padding-left: 2pt }
+A:link
+{
+    COLOR: blue
+}
+A:visited
+{
+    COLOR: blue
+}
+H2
+{
+    FONT-FAMILY: 隶书, 宋体;
+    FONT-SIZE: 16pt;
+    MARGIN: 20px 0px;
+    TEXT-DECORATION: underline
+}
+.data_grid
+{
+    BACKGROUND-COLOR: transparent;
+    MARGIN: 0px
+}
+DIV
+{
+    MARGIN: 0px 30px
+}
+FORM
+{
+    MARGIN: 0px
+}
+.data_card
+{
+    BACKGROUND-COLOR: transparent
+}
+H3
+{
+    FONT-FAMILY: Arial, 宋体;
+    FONT-SIZE: 12pt
+}
+H4
+{
+    FONT-FAMILY: Arial, 宋体;
+    FONT-SIZE: 10.5pt
+}
+.TSC
+{
+    BORDER-BOTTOM: #3333ff 1px solid;
+    BORDER-LEFT: #3333ff 1px solid;
+    BORDER-RIGHT: #3333ff 1px solid;
+    BORDER-TOP: #3333ff 1px solid
+}
+.TSX
+{
+    BACKGROUND-COLOR: #ffffff;
+    BORDER-BOTTOM: #3333ff 1px solid;
+    BORDER-LEFT: #3333ff 0px solid;
+    BORDER-RIGHT: #3333ff 0px solid;
+    BORDER-TOP: #3333ff 0px solid
+}
+
+.bluebuttom
+{BACKGROUND: #6699FF; border:1 solid #6699FF; COLOR: #ffffff; FONT-SIZE: 9pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 18px; LINE-HEIGHT: normal}
+
+.grid_button
+{BACKGROUND: #9999ff; border:1 solid #0000ff; COLOR: #000000; FONT-SIZE: 10pt; FONT-STYLE: normal; FONT-VARIANT: normal; FONT-WEIGHT: normal; HEIGHT: 20px; LINE-HEIGHT: normal}
+
+.cd_button
+{BACKGROUND-COLOR: #9999FF; COLOR: #ffffff; border: 1 solid #000000; HEIGHT: 25px; }

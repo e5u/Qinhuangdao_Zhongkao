@@ -1,0 +1,184 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; ">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<style>
+<!--
+body         
+{
+
+    FONT-SIZE: 10pt;
+    MARGIN: 0pt 0pt 0pt 0pt;
+    PADDING-LEFT: 0pt
+}
+td
+{
+    FONT-SIZE: 10pt;
+}
+A {
+	TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff0000; TEXT-DECORATION: underline
+}
+-->
+</STYLE>
+
+
+<title>河北省秦皇岛中考练习系统</title>
+</head>
+<body bgproperties="fixed" background="images/BJ.GIF" topmargin="0" leftmargin="0">
+
+<font color='#ff0000'>
+<h2 align="center" id=ExamTitle></h2>
+</font>
+
+ 
+<table border="0" align="center" cellspacing="0" cellpadding="0">
+  <TR>
+    <td valign="bottom" ><font color='#ff0000'><b>考号:102290101001</b></font></td>
+    <td valign="bottom" ><font color='#ff0000'><b>姓名:USER</b></font></td>
+    <td valign="bottom" ><font color='#ff0000'><b>机号:1</b></font></td>
+    <td valign="bottom" ><font color='#ff0000'><b>开始时间:<input name="startminutes" id=ExmStartTime size=8 value="19:25:08"></b></font></td>
+    <td valign="bottom" ><font color='#ff0000'><b>标准用时:<input name="sminutes" id=ExmMinutes   size=4 value=999>分钟</b></font></td>
+    <td valign="bottom" ><font color='#ff0000'><b>实际用时:<input name="minutes"   size=4 value=0>分钟<input name="seconds"    size=3 value=0>秒</b></font></td>
+  </TR>
+</table>                                                                                                                                            
+
+<p><div id="PAPERAREA" name="PAPERAREA"> </div>
+  <p align=center>　</p>     
+<p align=center><input type='button' id=btnSubmit value='结束练习' name='btnJudge'>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="DEFAULT.HTM">返回练习列表</a></p>
+</p>     
+<p>　</p>     
+<p>　</p>     
+  
+<input type=hidden id=CztNum name=CztNum size='10' value='0'>
+<input type=hidden id=QIndex name=QIndex size='90' >                              
+<input type=hidden id=CurrQstNo  size='10' >
+<input type=hidden id=CurrResult  size='10' >
+<input type=hidden id=CurrCztNo size='10' >
+<input type=hidden id=CurrQstType  size='10' >
+<input type=hidden id=CurrFile  size='10' >
+<INPUT type=hidden id=wm2  value=打开本题 name=Submit> 
+
+
+<input type='button' id=OpenQstWin style="VISIBILITY: hidden" value='打开答题窗口'>
+<input type='button' id=submitAsw style="VISIBILITY: hidden" value='保存基础知识题答题结果'>    
+
+<input type="hidden" ID="txtCommand" value="PAPERDISP">
+<input type="button" style="VISIBILITY: hidden" ID="btnCallVB">                                                                               
+</body>                   
+
+<SCRIPT LANGUAGE=vbscript>                                                       
+ tid = window.setInterval("ticker()", 1000)                                                      
+ sub ticker                                                      
+    seconds.value = seconds.value + 1                                                       
+    if seconds.value>60 then                                                     
+       minutes.value = minutes.value + 1                                                      
+       seconds.value = seconds.value - 60                                                     
+    end if                                                     
+ end sub                        
+      
+ Function DivClick1(pQstType) '单击基础知识题     
+     'On Error Resume Next  '2002/09/02      
+     lcStr= Trim(window.event.srcelement.name)  '取表单项名称    
+     lcQstItemNum=document.getElementsByName(lcStr).length '2008/02/02获取答案个数
+     lcQstNo = Right(lcStr, Len(lcStr)-1)     
+     lcResult = ""   '答题结果     
+     If pQstType=1 Then '单选     
+        For lnI=1 To lcQstItemNum    
+            'Msgbox lcStr & lnI
+            If Document.All(lcStr & lnI).Checked Then
+               lcResult = Document.All(lcStr & lnI).Value     
+               Exit For     
+            End If     
+        Next     
+     ElseIf pQstType=3 Then '多选     
+        For lnI=1 To lcQstItemNum     
+            If Document.All(lcStr & lnI).Checked Then     
+               lcResult = lcResult & Document.All(lcStr & lnI).Value     
+            End If     
+        Next     
+     ElseIf pQstType=5 Then '判断     
+        For lnI=1 To lcQstItemNum     
+            If Document.All(lcStr & lnI).Checked Then     
+               lcResult = Document.All(lcStr & lnI).Value     
+               Exit For     
+            End If     
+        Next     
+     End If     
+     
+     If lcResult<>"" Then     
+        Document.all("DIV" & Right(lcStr, Len(lcStr)-1)).style.backgroundColor = "#ccffff"     
+        CurrResult.Value = lcResult     
+        CurrQstNo.Value = lcQstNo     
+        submitAsw.Click     
+     End If     
+ End Function    
+
+ Function DivClick2(pCztNo)  '单击操作题     
+    Dim lnI                
+    For lnI=1 To CztNum.value               
+        Document.all("CZT" & lnI).style.backgroundColor = ""                
+    Next                
+    Document.all("CZT" & pCztNo).style.backgroundColor = "#ccffff"       
+ End  Function    
+            
+ Function QStart(pStr)   
+    dim strInfo
+    
+  lcStr   = pStr   
+    lcCztNo = Left(lcStr, InStr(lcStr, "//")-1)   
+    lcStr   = Right(lcStr, Len(lcStr) - InStr(lcStr, "//") - 1)   
+    lnType  = Left(lcStr, InStr(lcStr, "//")-1)   
+    lcFile  = Right(lcStr, Len(lcStr) - InStr(lcStr, "//") - 1)   
+    
+    For lnI=1 To CztNum.value                
+        Document.all("CZT" & lnI).style.backgroundColor = ""                
+    Next                
+    Document.all("CZT" & lcCztNo).style.backgroundColor = "#ccffff"       
+         
+    '写入参数     
+    CurrCztNo.Value = lcCztNo     
+    CurrQstType.Value = lnType     
+    CurrFile.Value = lcFile     
+    
+	
+	strInfo="QSTART//" & CurrQstType.Value & "//" & CurrFile.Value
+    //    strInfo="QSTART//F://秦皇岛中考2012完全版\自建版本\" & CurrFile.Value
+   //'' 'If lnType = 35 Then         
+         //lcStr1= Trim(window.event.srcelement.name)  '取表单项名称
+         //lcQstNo = Right(lcStr1, Len(lcStr1)-1)  '去掉开头的变量名前缀字符
+    //    Window.Open "webmail_old\wmLogin2.htm" 
+	//exit function	  
+	//end if
+	txtCommand.value=strInfo
+	if lnType=25 then
+	Window.Open "http://localhost:7003/" & CurrFile.Value
+	exit function 
+	end if
+	btnCallVB.Click     
+ End Function                
+ 
+ sub submitAsw_onclick()
+    dim strInfo
+    strInfo="SAVECLICK//" & CurrQstNo.Value & "//" & CurrResult.Value 
+    txtCommand.value=strInfo
+	btnCallVB.click
+ end sub
+ 
+ sub btnSubmit_onclick()
+    txtCommand.value="TESTEND"
+    btnCallVB.click
+ end sub
+ 
+ sub btnCallVB_onclick()
+ 
+ end sub
+</SCRIPT> 
+                                                                                                        
+</html>

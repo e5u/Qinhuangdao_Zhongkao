@@ -1,0 +1,900 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>百度搜索_熊猫团团圆圆</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta name="Microsoft Theme" content="none, default">
+<meta name="Microsoft Border" content="none, default">
+<style>
+<!--
+p{margin:0;padding:0;list-style:none}table{border:0}.result{width:33.7em;table-layout:fixed}td{font-family:arial}td{font-size:9pt;line-height:18px}.f{line-height:115%;*line-height:120%;font-size:100%;width:33.7em;word-break:break-all;word-wrap:break-word}h3{margin:0;padding:0;list-style:none}.t{font-weight:normal;font-size:medium}.g{color:#008000}.m{color:#666}a.m{color:#666}-->
+</style>
+</head>
+
+<body bgcolor="#CCFFCC">
+
+<br>
+<SCRIPT id=360sd_765864 defer type=text/javascript>
+var safemonsepro = {
+_sdpath:"",
+_sfdpath:"",
+_spopname:"safeMonUIDivTip",
+_binit:false,
+_bhkresize:false,
+_ocico:null,
+_nctimer:-1,
+_npopwidth:357,
+_init:function(dpath){
+	var s=this;
+	if(s._binit) return;
+	s._sdpath=dpath;
+	s._sfdpath='file:///'+encodeURI(s._sdpath)+'/images/';
+	s._binit=true;
+},
+_ce:function(ename){return document.createElement(ename);},
+_ge:function(ename){return document.getElementById(ename);},
+_tcge:function(o, t, c){
+	var os=o.getElementsByTagName(t);
+	var i=0;
+	for(i=0;i<os.length;i++)
+		if(os[i].className.indexOf(c)>=0)
+			return os[i];
+	return null;
+},
+_setwh:function(o, w, h){o.style.width=w+'px';o.style.height=h+'px';},
+_seticoimg:function(o, nflag){
+	var s=this;
+	o.style.backgroundImage='url('+s._sfdpath+(nflag==0?'sfico.gif':'dgico2.gif')+')';
+	o.style.backgroundRepeat="no-repeat";
+	o.style.backgroundPosition="center";
+},
+_decode64:function(input){
+	var keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+	var output = "";
+	var chr1, chr2, chr3 = "";
+	var enc1, enc2, enc3, enc4 = "";
+	var i = 0;
+
+	if(input.length%4!=0){
+		return "";
+	}
+	var base64test = /[^A-Za-z0-9\+\/\=]/g;
+	if (base64test.exec(input)){
+		return "";
+	}
+
+	do{
+		enc1 = keyStr.indexOf(input.charAt(i++));
+		enc2 = keyStr.indexOf(input.charAt(i++));
+		enc3 = keyStr.indexOf(input.charAt(i++));
+		enc4 = keyStr.indexOf(input.charAt(i++));
+
+		chr1 = (enc1 << 2) | (enc2 >> 4);
+		chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+		chr3 = ((enc3 & 3) << 6) | enc4;
+
+		output = output + String.fromCharCode(chr1);
+
+		if (enc3 != 64) {
+			output+=String.fromCharCode(chr2);
+		}
+		if (enc4 != 64) {
+			output+=String.fromCharCode(chr3);
+		}
+
+		chr1 = chr2 = chr3 = "";
+		enc1 = enc2 = enc3 = enc4 = "";
+	} while (i < input.length);
+	return output;
+},
+_utf8_2_unicode:function(s){
+	var c, d = "", flag = 0, tmp;
+	for (var i = 0; i < s.length; i++) {
+		c = s.charCodeAt(i);
+		if (flag == 0) {
+			if ((c & 0xe0) == 0xe0) {
+				flag = 2;
+				tmp = (c & 0x0f) << 12;
+			} else if ((c & 0xc0) == 0xc0) {
+				flag = 1;
+				tmp = (c & 0x1f) << 6;
+			} else if ((c & 0x80) == 0) {
+				d += s.charAt(i);
+			} else {
+				flag = 0;
+			}
+		} else if (flag == 1) {
+			flag = 0;
+			d += String.fromCharCode(tmp | (c & 0x3f));
+		} else if (flag == 2) {
+			flag = 3;
+			tmp |= (c & 0x3f) << 6;
+		} else if (flag == 3) {
+			flag = 0;
+			d += String.fromCharCode(tmp | (c & 0x3f));
+		} else {
+			flag = 0;
+		}
+	}
+	return d;
+},
+_insertAfter:function(o, t){
+	var p=t.parentNode;
+	if(p.lastChild == t)
+		p.appendChild(o);
+	else
+		p.insertBefore(o, t.nextSibling);
+},
+_popup:function(ev, aobj, o, nflag, extInfo){
+	if(nflag==0) return;
+	var s=this;
+	var d=s._ge(s._spopname);
+	if(d) d.style.display='none';
+	var scrTop = 0;
+	var scrLeft = 0;
+	var bCompatMode=false;
+	if(typeof document.compatMode != 'undefined' && document.compatMode != 'BackCompat'){
+		scrTop = document.documentElement.scrollTop;
+		scrLeft = document.documentElement.scrollLeft;
+	} else if (typeof document.body != 'undefined'){
+		scrTop = document.body.scrollTop; 
+		scrLeft = document.body.scrollLeft;
+		bCompatMode=true;
+	}
+	var rc=o.getBoundingClientRect();
+	var l=rc.left + 16 + scrLeft;
+	var t=rc.top + scrTop;
+
+	var ch=document.documentElement.clientHeight;
+	var cw=document.documentElement.clientWidth;
+	if(ch==0||cw==0){
+		ch=document.body.clientHeight;
+		cw=document.body.clientWidth;
+	}
+	var cl=cw + scrLeft - s._npopwidth;
+	var spos='lt';
+	if(l > cl){
+		spos='rt';
+		l = l - s._npopwidth + 23;
+		t += 17;
+	}else{
+		spos='lt';
+		t -= 9;
+	}
+	s._showpop(aobj, spos, nflag, extInfo);
+	if(!d) d=s._ge(s._spopname);
+	if(d){
+		var bdpos=document.body.currentStyle.position;
+		if(!bCompatMode && (bdpos=='relative' || bdpos=='absolute')){
+			l-=document.body.offsetLeft;
+			t-=document.body.offsetTop;
+		}
+		d.style.left=l+"px";
+		d.style.top=t+"px";
+		d.style.display='';
+		if(!s._bhkresize){
+			s._bhkresize=true;
+			window.attachEvent("onresize", function(){d.style.display='none';});
+		}
+	}
+},
+_showpop:function(o, spos, nflag, extInfo){
+	var	s=this;
+	var bIsAdLink=false;
+	var u=o.href;
+	// get correct url
+	if(u.indexOf('baidu.php?url=') != -1 || u.indexOf("ma.baidu.com/fs/rcv/click.php") != -1){
+		u=s._getbaiduurl(o);
+		if(u == '' || !u)
+			u=o.href;
+		bIsAdLink=true;
+	}
+
+	{
+		var ts = "";
+		if(u.indexOf("http://") == 0)
+			ts = u.substring(7, u.length);
+		if(ts != "") {
+			var start = -1;
+			while(1) {
+				ts = unescape(ts);
+				start = ts.indexOf("http://", 1);
+				if(start != -1){
+					bIsAdLink = true;
+					ts = ts.substring(start, ts.length);
+				}
+				else
+					break;
+			}
+			u = unescape(ts);
+		}
+		if(u == "" || !u)
+			u = obj.href;
+	}
+
+	if(u.indexOf("a1click.cpc.sogou.com/bill_search?p=") != -1){
+		var nStart = u.indexOf("&url=");
+		if(nStart != -1) {
+			u = u.substring(nStart + 5, u.length);	
+		}
+		bIsAdLink = true;
+	}
+	// get correct url end
+	var d=s._ge(s._spopname);
+	if(!d){
+		d=s._ce('div');
+		d.id=s._spopname;
+		d.style.position='absolute';
+		d.style.display='none';
+		d.style.zIndex=10000;
+		d.style.fontSize='12px';
+		d.style.fontFamily='Arial, \u5B8B\u4F53, Helvetica, sans-serif';
+		//d.style.overflow='hidden';
+		d.style.width='357px';
+		document.body.appendChild(d);
+	}
+
+	var p='';
+	var dT,dL,rT,rL,rW,rH;
+	var h=s._gethost(o, u, bIsAdLink);
+	var cornbkg='';
+	if(spos=='lt'){
+		dT=0;dL=6;
+		rT=11;rL=0;rW=8;rH=11;
+		cornbkg='cornl.gif';
+	}else if(spos=='rt'){
+		dT=6;dL=0;
+		rT=0;rL=318;rW=13;rH=8;
+		cornbkg='cornt.gif';
+	}
+	var txTitle='\u67E5\u770B\u8BE6\u60C5';
+	var txInfo='';
+	var cname,oname,ourl,bshowjc;
+	cname=oname=ourl='';
+	bshowjc=true;
+	if(nflag!=0){
+		var t=nflag&0xff;
+		if(t==0x08){//mal
+			txTitle="\u5371\u9669\u7684\u6728\u9A6C\u7F51\u7AD9";
+			txInfo="\u8FD9\u4E2A\u7F51\u7AD9\u88AB\u68C0\u6D4B\u51FA\u5B58\u5728\u5927\u91CF\u6728\u9A6C\u75C5\u6BD2\uFF0C\u60A8\u7684\u7535\u8111\u6709\u53EF\u80FD\u4E2D\u75C5\u6BD2\uFF0C\u751A\u81F3\u5BFC\u81F4\u94F6\u884C\u8D26\u53F7\u5BC6\u7801\u7B49\u4E2A\u4EBA\u9690\u79C1\u88AB\u7A83\u53D6\uFF0C\u5F3A\u70C8\u5EFA\u8BAE\u4E0D\u8981\u8BBF\u95EE\u3002";
+		}else if(t==0x10||t==0x18){
+			bshowjc=false;
+			var infos=new Array(
+					//1
+					new Array('\u865A\u5047\u7684\u91D1\u878D\u8BC1\u5238\u7F51\u7AD9',
+						'\u8FD9\u4E2A\u7F51\u7AD9\u5B58\u5728\u865A\u5047\u7684\u91D1\u878D\u8BC1\u5238\u5185\u5BB9\uFF0C\u60A8\u53EF\u80FD\u4F1A\u88AB\u9A97\u53D6\u94F6\u884C\u8D26\u53F7\u5BC6\u7801\u548C\u4E2A\u4EBA\u9690\u79C1\uFF0C\u9020\u6210\u4E2A\u4EBA\u8D22\u4EA7\u635F\u5931\u3002',
+						'\u4EFF\u5192\u7684',
+						'\u7F51\u7AD9',
+						'\u8FD9\u4E2A\u7F51\u7AD9\u662F\u4EFF\u5192\u7684',
+						'\u7F51\u7AD9\uFF0C\u60A8\u53EF\u80FD\u4F1A\u88AB\u9A97\u53D6\u94F6\u884C\u8D26\u53F7\u5BC6\u7801\u548C\u4E2A\u4EBA\u9690\u79C1\uFF0C\u9020\u6210\u8D22\u4EA7\u635F\u5931\u3002'),
+					//2
+					new Array('\u865A\u5047\u7684\u5F69\u7968\u7F51\u7AD9',
+						'\u8FD9\u4E2A\u7F51\u7AD9\u4F1A\u8BF1\u9A97\u60A8\u8D2D\u4E70\u865A\u5047\u7684\u5F69\u7968\u9884\u6D4B\u4FE1\u606F\uFF0C\u751A\u81F3\u9A97\u53D6\u60A8\u7684\u94F6\u884C\u8D26\u53F7\u5BC6\u7801\uFF0C\u60A8\u53EF\u80FD\u4F1A\u88AB\u9A97\u9020\u6210\u8D22\u4EA7\u635F\u5931\u3002',
+						'\u5047\u5192\u7684',
+						'\u7F51\u7AD9',
+						'\u8FD9\u4E2A\u7F51\u7AD9\u662F\u5047\u5192\u7684',
+						'\u7F51\u7AD9\uFF0C\u63D0\u4F9B\u865A\u5047\u7684\u5F69\u7968\u9884\u6D4B\u4FE1\u606F\uFF0C\u60A8\u53EF\u80FD\u4F1A\u88AB\u9A97\u9020\u6210\u8D22\u4EA7\u635F\u5931\u3002'),
+					//3
+					new Array('\u975E\u6CD5\u7684\u5883\u5916\u5F69\u7968\u7F51\u7AD9',
+						'\u8FD9\u662F\u4E00\u4E2A\u975E\u6CD5\u7684\u5883\u5916\u5F69\u7968\u7F51\u7AD9\uFF0C\u5B58\u5728\u4E2D\u56FD\u5927\u9646\u6CD5\u5F8B\u7981\u6B62\u7684\u5F69\u7968\u4E1A\u52A1\uFF0C\u8FD8\u6709\u53EF\u80FD\u4F1A\u8BF1\u9A97\u60A8\u8D2D\u4E70\u865A\u5047\u7684\u5F69\u7968\u9884\u6D4B\u4FE1\u606F\uFF0C\u60A8\u53EF\u80FD\u4F1A\u88AB\u9A97\u9020\u6210\u8D22\u4EA7\u635F\u5931\u3002',
+						'',
+						'',
+						'',
+						''),
+					//4
+					new Array('\u865A\u5047\u7684\u4E2D\u5956\u7F51\u7AD9',
+						'\u8FD9\u4E2A\u7F51\u7AD9\u5B58\u5728\u865A\u5047\u7684QQ\u3001\u975E\u5E386+1\u7B49\u7F51\u7AD9\u7684\u4E2D\u5956\u4FE1\u606F\uFF0C\u60A8\u53EF\u80FD\u4F1A\u88AB\u9A97\u4EA4\u7EB3\u6240\u8C13\u201C\u9886\u5956\u624B\u7EED\u8D39\u201D\u3001\u201C\u6240\u5F97\u7A0E\u201D\u7B49\u9020\u6210\u8D22\u4EA7\u635F\u5931\u3002',
+						'\u5047\u7684',
+						'\u4E2D\u5956\u7F51\u7AD9',
+						'\u8FD9\u662F\u4E00\u4E2A\u4EFF\u5192\u7684',
+						'\u4E2D\u5956\u7F51\u7AD9\uFF0C\u60A8\u53EF\u80FD\u4F1A\u88AB\u9A97\u4EA4\u7EB3\u6240\u8C13\u201C\u9886\u5956\u624B\u7EED\u8D39\u201D\u3001\u201C\u6240\u5F97\u7A0E\u201D\u7B49\u9020\u6210\u8D22\u4EA7\u635F\u5931\u3002'),
+					//5
+					new Array('\u5047\u5192\u7684\u767B\u5F55\u754C\u9762',
+						'\u8FD9\u4E2A\u7F51\u7AD9\u5B58\u5728\u5047\u5192\u7684\u767B\u5F55\u9875\u9762\uFF0C\u6A21\u4EFFQQ\u3001163\u7B49\u8457\u540D\u7F51\u7AD9\u7684\u767B\u5F55\u754C\u9762\u8BF1\u9A97\u60A8\u767B\u5F55\uFF0C\u60A8\u7684\u8D26\u53F7\u5BC6\u7801\u548C\u4E2A\u4EBA\u4FE1\u606F\u53EF\u80FD\u4F1A\u88AB\u9A97\u53D6\uFF01',
+						'\u5047\u5192\u7684',
+						'\u7F51\u7AD9\u767B\u5F55\u754C\u9762',
+						'\u8FD9\u662F\u4E00\u4E2A\u5047\u5192\u7684',
+						'\u7F51\u7AD9\u767B\u5F55\u754C\u9762\uFF0C\u60A8\u7684',
+						'\u8D26\u53F7\u5BC6\u7801\u548C\u4E2A\u4EBA\u4FE1\u606F\u53EF\u80FD\u4F1A\u88AB\u9A97\u53D6\uFF01'),
+					//6
+					new Array('\u5047\u5192\u7684\u8D2D\u7269\u7F51\u7AD9',
+						'\u8FD9\u662F\u4E00\u4E2A\u5047\u5192\u7684\u8D2D\u7269\u7F51\u7AD9\uFF0C\u5B58\u5728\u865A\u5047\u7684\u8D2D\u7269\u4FE1\u606F\uFF0C\u60A8\u53EF\u80FD\u4F1A\u88AB\u9A97\u53D6\u6DD8\u5B9D\u3001\u94F6\u884C\u5361\u7684\u8D26\u53F7\u5BC6\u7801\u7B49\uFF0C\u9020\u6210\u8D22\u4EA7\u635F\u5931\u3002',
+						'\u5047\u5192\u7684',
+						'\u7F51\u7AD9',
+						'\u8FD9\u662F\u4E00\u4E2A\u5047\u5192\u7684',
+						'\u7F51\u7AD9\uFF0C\u60A8\u53EF\u80FD\u4F1A\u88AB\u9A97\u53D6',
+						'\u3001\u94F6\u884C\u5361\u7684\u8D26\u53F7\u5BC6\u7801\u7B49\uFF0C\u9020\u6210\u8D22\u4EA7\u635F\u5931\u3002'),
+					//7
+					new Array('\u5047\u5192\u7684\u4E0B\u8F7D\u7F51\u7AD9',
+						'\u8FD9\u4E2A\u7F51\u7AD9\u5B58\u5728\u865A\u5047\u3001\u5371\u9669\u7684\u4E0B\u8F7D\u4FE1\u606F\uFF0C\u60A8\u53EF\u80FD\u4F1A\u88AB\u8BF1\u9A97\u4E0B\u8F7D\u6346\u7ED1\u4E86\u6728\u9A6C\u75C5\u6BD2\u7684\u7A0B\u5E8F\uFF0C\u53EF\u80FD\u5BFC\u81F4\u60A8\u7684\u7535\u8111\u4E2D\u6BD2\u3001\u751A\u81F3\u4E2A\u4EBA\u9690\u79C1\u88AB\u7A83\u53D6\u3002',
+						'\u5047\u5192\u7684',
+						'\u7F51\u7AD9',
+						'\u8FD9\u662F\u4E00\u4E2A\u5047\u5192\u7684',
+						'\u7F51\u7AD9\uFF0C\u53EF\u80FD\u4F1A\u8BF1\u9A97\u60A8\u4E0B\u8F7D\u5305\u542B\u6728\u9A6C\u75C5\u6BD2\u7684\u7A0B\u5E8F\uFF0C\u5BFC\u81F4\u60A8\u7684\u7535\u8111\u4E2D\u6BD2\u751A\u81F3\u4E2A\u4EBA\u9690\u79C1\u88AB\u7A83\u53D6\u3002'),
+					//8
+					new Array('\u5B58\u5728\u6B3A\u8BC8\u5E7F\u544A\u7684\u7F51\u7AD9',
+						'\u8FD9\u4E2A\u7F51\u7AD9\u5B58\u5728\u4E3A\u6B3A\u8BC8\u7F51\u7AD9\u520A\u767B\u5E7F\u544A\u7684\u884C\u4E3A\uFF0C\u60A8\u53EF\u80FD\u88AB\u8BF1\u9A97\u8BBF\u95EE\u6B3A\u8BC8\u7684\u5F69\u7968\u3001\u4E2D\u5956\u7B49\u7F51\u7AD9\uFF0C\u5BFC\u81F4\u94F6\u884C\u8D26\u53F7\u5BC6\u7801\u88AB\u7A83\u53D6\uFF0C\u751A\u81F3\u8D22\u4EA7\u635F\u5931\u3002',
+						'',
+						'',
+						'',
+						''),
+					//9
+					new Array('\u5B58\u5728\u5047\u5192\u63D0\u793A\u7A97\u7684\u7F51\u7AD9',
+						'\u8FD9\u4E2A\u7F51\u7AD9\u5B58\u5728\u5047\u5192\u7684360\u5B89\u5168\u536B\u58EB\u3001QQ\u7B49\u8F6F\u4EF6\u7684\u63D0\u793A\u7A97\uFF0C\u60A8\u53EF\u80FD\u4F1A\u88AB\u8BF1\u9A97\u6B3A\u8BC8\u7F51\u7AD9\u3001\u75C5\u6BD2\u7F51\u7AD9\uFF0C\u5BFC\u81F4\u60A8\u7684\u7535\u8111\u4E2D\u6BD2\u3001\u751A\u81F3\u4E2A\u4EBA\u9690\u79C1\u88AB\u7A83\u53D6\u3002',
+						'\u5B58\u5728\u5047\u5192',
+						'\u63D0\u793A\u7A97\u7684\u7F51\u7AD9',
+						'\u8FD9\u4E2A\u7F51\u7AD9\u5B58\u5728\u5047\u5192\u7684',
+						'\u7684\u63D0\u793A\u7A97\uFF0C\u60A8\u53EF\u80FD\u4F1A\u88AB\u8BF1\u9A97\u6B3A\u8BC8\u7F51\u7AD9\u3001\u75C5\u6BD2\u7F51\u7AD9\uFF0C\u5BFC\u81F4\u60A8\u7684\u7535\u8111\u4E2D\u6BD2\u3001\u751A\u81F3\u4E2A\u4EBA\u9690\u79C1\u88AB\u7A83\u53D6\u3002'),
+					// 10
+					new Array(''),
+					// 11
+					new Array('',
+						'\u8FD9\u4E2A\u7F51\u7AD9\u53EF\u80FD\u76D7\u7528\u5176\u4ED6\u6B63\u89C4\u7F51\u7AD9\u7684\u6807\u8BC6\uFF0C\u6216\u8BB8\u4F1A\u7ED9\u60A8\u5E26\u6765\u635F\u5931\uFF0C\u8BF7\u8C28\u614E\u8BBF\u95EE\u3002',
+						'', '', '', ''),
+					// 12
+					new Array('\u5047\u5192\u7684\u62DB\u8058\u7F51\u7AD9',
+						'\u8FD9\u4E2A\u7F51\u7AD9\u5B58\u5728\u5927\u91CF\u865A\u5047\u62DB\u8058\u4FE1\u606F\uFF0C\u60A8\u53EF\u80FD\u4F1A\u88AB\u8BF1\u9A97\u652F\u4ED8\u4FDD\u8BC1\u91D1\u3001\u4FDD\u5BC6\u8D39\u3001\u624B\u7EED\u8D39\u7B49\u5404\u79CD\u8D39\u7528\uFF0C\u4E3A\u907F\u514D\u7ED9\u60A8\u9020\u6210\u8D22\u4EA7\u635F\u5931\uFF0C\u8BF7\u60A8\u8C28\u614E\u8BBF\u95EE\u3002',
+						'\u5047\u5192\u7684', '\u7F51\u7AD9',
+						'\u8FD9\u662F\u4E00\u4E2A\u5047\u5192',
+						'\u7684\u7F51\u7AD9\uFF0C\u865A\u5047\u62DB\u8058\u7F51\u7AD9\u5047\u5192\u6B63\u89C4\u4F01\u4E1A\u53D1\u5E03\u865A\u5047\u62DB\u8058\u4FE1\u606F\uFF0C\u8BA9\u5E94\u8058\u8005\u652F\u4ED8\u4FDD\u8BC1\u91D1\u3001\u4FDD\u5BC6\u8D39\u3001\u624B\u7EED\u8D39\u7B49\u5404\u79CD\u8D39\u7528\uFF0C\u4E3A\u907F\u514D\u7ED9\u60A8\u9020\u6210\u8D22\u4EA7\u635F\u5931\uFF0C\u8BF7\u60A8\u8BBF\u95EE\u771F\u6B63\u7684\u5B98\u65B9\u7F51\u7AD9\u3002'),
+					// 13
+					new Array('\u5047\u5192\u7684\u5B66\u6821\u7F51\u7AD9',
+						'\u8FD9\u4E2A\u7F51\u7AD9\u6240\u5C5E\u5B66\u6821\u4E0D\u5728\u6559\u80B2\u90E8\u516C\u5E03\u7684\u5168\u56FD\u666E\u901A\u9AD8\u6821\u3001\u9662\u6821\u4FE1\u606F\u5E93\u4E2D\u3002\u672A\u7ECF\u6559\u80B2\u90E8\u6279\u51C6\u7684\u5B66\u6821\u5C5E\u4E8E\u865A\u5047\u529E\u5B66\uFF0C\u8BF7\u60A8\u8C28\u614E\u8BBF\u95EE\u3002',
+						'\u5047\u5192\u7684', '\u7F51\u7AD9',
+						'\u8FD9\u662F\u4E00\u4E2A\u5047\u5192',
+						'\u7684\u7F51\u7AD9\uFF0C\u4EFF\u5192\u7684\u529E\u5B66\u673A\u6784\u7F51\u7AD9\u5F80\u5F80\u901A\u8FC7\u4EFF\u5192\u6B63\u89C4\u529E\u5B66\u673A\u6784\u7684\u7F51\u7AD9\u6765\u53D1\u5E03\u865A\u5047\u4FE1\u606F\uFF0C\u8BF1\u9A97\u8BBF\u95EE\u8005\u4E0A\u5F53\uFF0C\u4E3A\u907F\u514D\u7ED9\u60A8\u9020\u6210\u635F\u5931\uFF0C\u8BF7\u60A8\u8BBF\u95EE\u771F\u6B63\u7684\u5B98\u65B9\u7F51\u7AD9\u3002')
+					);
+			var tid=0;
+			if(extInfo&&extInfo!=""){
+				var dinfo=s._decode64(extInfo);
+				var ds=dinfo.split('\t');
+				if(ds.length>=3)
+					tid=ds[2];
+				if(ds.length>=6 && ds[5].indexOf("://") > 0){
+					cname=s._utf8_2_unicode(ds[3]);
+					oname=s._utf8_2_unicode(ds[4]);
+					ourl=ds[5];
+				}
+			}
+
+			if((tid>=101&&tid<=109) || (tid>=112&&tid<=113)){
+				var si=infos[tid-101];
+				if(oname!=''&&ourl!=''&&si[2]!=''){
+					txTitle=si[2]+oname+si[3];
+					txInfo=si[4]+oname+si[5];
+					if(si.length>6){
+						txInfo+=oname+si[6];
+					}
+				}else{
+					txTitle=si[0];
+					txInfo=si[1];
+					oname=cname=ourl='';
+				}
+			}else{
+				txTitle="\u5B58\u5728\u672A\u7ECF\u8BC1\u5B9E\u4FE1\u606F\u7684\u7F51\u7AD9";
+				txInfo="\u5F53\u524D\u9875\u9762\u542B\u6709\u5927\u91CF\u672A\u7ECF\u8BC1\u5B9E\u7684\u4FE1\u606F\uFF0C\u8BBF\u95EE\u542B\u6709\u6B3A\u8BC8\u5185\u5BB9\u7684\u7F51\u7AD9\u53EF\u80FD\u4F1A\u7ED9\u60A8\u9020\u6210\u8D22\u4EA7\u635F\u5931\uFF0C\u8BF7\u60A8\u8C28\u614E\u8BBF\u95EE\u3002";
+			}
+		}else if(t==0x20||t==0x28){//bemal
+			txTitle="\u6709\u98CE\u9669\u7684\u6302\u9A6C\u7F51\u7AD9";
+			txInfo="\u8FD9\u4E2A\u7F51\u7AD9\u6700\u8FD1\u88AB\u68C0\u6D4B\u51FA\u5B58\u5728\u6728\u9A6C\u75C5\u6BD2\u94FE\u63A5\uFF0C\u60A8\u7684\u7535\u8111\u6709\u53EF\u80FD\u88AB\u6728\u9A6C\u75C5\u6BD2\u5165\u4FB5\uFF0C\u5BFC\u81F4\u7535\u8111\u4E2D\u6BD2\u751A\u81F3\u94F6\u884C\u8D26\u53F7\u7B49\u4E2A\u4EBA\u9690\u79C1\u7A83\u53D6\uFF0C\u5EFA\u8BAE\u6682\u65F6\u4E0D\u8981\u8BBF\u95EE\u3002";
+		}else if(t==0x30){//download
+			bshowjc=false;
+			txTitle="\u5305\u542B\u5371\u9669\u4E0B\u8F7D\u94FE\u63A5\u7684\u7F51\u7AD9";
+			txInfo="\u8BE5\u7F51\u9875\u5B58\u5728\u5371\u9669\u7684\u4E0B\u8F7D\u94FE\u63A5\uFF0C\u8FD9\u4E9B\u94FE\u63A5\u5E38\u4F2A\u88C5\u6210\u7535\u5B50\u4E66\u3001\u7535\u5F71\u3001\u89C6\u9891\u3001\u8F6F\u4EF6\u7B49\u8BF1\u9A97\u60A8\u4E0B\u8F7D\uFF0C\u60A8\u53EF\u80FD\u4F1A\u8BEF\u70B9\u51FB\u4E0B\u8F7D\u5BFC\u81F4\u7535\u8111\u4E2D\u75C5\u6BD2\uFF0C\u8BF7\u8C28\u614E\u8BBF\u95EE\u3002";
+		}else if(t==0x38){
+			bshowjc=false;
+			var tid=0;
+			if(extInfo&&extInfo!=""){
+				var dinfo=s._decode64(extInfo);
+				var ds=dinfo.split('\t');
+				if(ds.length>=3)
+					tid=ds[2];
+			}
+			if(tid==1){
+				txTitle='\u672A\u663E\u793A\u6709\u552E\u836F\u8D44\u683C\u8BC1\u4E66\u7684\u7F51\u7AD9';
+				txInfo='<div style="width:320px;white-space:nowrap;overflow:hidden;">\u8FD9\u4E2A\u7F51\u7AD9('+h+')</div>';
+				txInfo+='\u672A\u663E\u793A\u5176\u83B7\u5F97<a href="http://www.sda.gov.cn/" target=_blank style="color:#4a76bf;">\u56FD\u5BB6\u98DF\u54C1\u836F\u54C1\u76D1\u7763\u7BA1\u7406\u5C40</a>\u9881\u53D1\u7684\u300A\u4E92\u8054\u7F51\u836F\u54C1\u4EA4\u6613\u670D\u52A1\u8D44\u683C\u8BC1\u4E66\u300B\u3002\u8BF7\u8C28\u614E\u8BBF\u95EE\u3002';
+			}
+		}else{
+			bshowjc=false;
+			txTitle="\u6709\u98CE\u9669\u7684\u7F51\u7AD9";
+			txInfo="\u8FD9\u4E2A\u7F51\u7AD9\u88AB\u68C0\u6D4B\u51FA\u5B58\u5728\u865A\u5047\u4FE1\u606F\u6216\u8005\u6728\u9A6C\u75C5\u6BD2\u7B49\u98CE\u9669\uFF0C\u53EF\u80FD\u5BFC\u81F4\u60A8\u7684\u94B1\u8D22\u88AB\u9A97\u6216\u8005\u7535\u8111\u88AB\u6728\u9A6C\u75C5\u6BD2\u611F\u67D3\uFF0C\u5EFA\u8BAE\u6682\u65F6\u4E0D\u8981\u8BBF\u95EE\u3002";
+		}
+	}
+	p+='<div style="position:absolute;z-order:0;top:'+dT+'px;left:'+dL+'px;background:#fff;width:351px;"><div style="border:solid 1px #898989;">';
+	p+='<div style="height:25px;"><div style="height:24px;background:#efefef;border:solid 1px #fff;border-bottom:none;position:relative;"><div class="safemonTitle" style="font-size:12px;font-weight:bold;color:#588518;height:16px;line-height:16px;margin:0 7px;padding:4px 0 0 18px;background-repeat:no-repeat;background-position:0 4px;">360\u5B89\u5168\u4E2D\u5FC3</div><div class="safemonClose" style="position:absolute;right:9px;top:7px;height:10px;width:9px;cursor:pointer;display:block;overflow:hidden;"></div></div></div>';
+	p+='<div class="safemonBanner" style="height:49px;background:#ca5224;overflow:hidden;"><div style="margin:3px 20px 0 60px;overflow:hidden;"><table width=269 height=46 cellpadding=0 cellspacing=0 style="background:none;"><tr style="background:none;"><td valign=middle align=left style="background:none;color:#fff;font-size:16px;font-weight:bold;">'+txTitle+'</td></tr></table></div></div>';
+	p+='<div style="background:#efefef;border:solid 1px #fff;padding:8px 13px;">';
+	p+='<div class="safemonInfo" style="min-height:68px;height:68px;overflow:visible;font-size:12px;color:#666;line-height:20px;">'+txInfo+'';
+	if(oname!=''&&ourl!=''){
+		p+='<div style="width:320px;overflow:hidden;white-space:nowrap;"><span style="font-weight:bold;">'+oname+'\u5B98\u65B9\u7F51\u5740\uFF1A</span><a href="'+ourl+'" style="color:#4a76bf;" target=_blank>'+ourl+'</a></div>';
+	}
+	p+='</div>';
+	p+='<div style="margin-top:5px;"><a href="#" class="safemonCloseTxt" style="float:right;color:#4a76bf;">\u5173\u95ED\u7A97\u53E3</a>';
+	if(bshowjc){
+		p+='<a href="http://jc.360.cn/urlsearch.htm?searchUrl='+encodeURI(h)+'" style="color:#4a76bf;" target=_blank>\u67E5\u770B\u8BE6\u60C5</a>';
+	}else{
+		p+='\u3000\u3000';
+	}
+	p+='</div>';
+	p+='</div>';
+	p+='</div></div>'
+	if(spos=='rt'||spos=='lt'){
+		p+='<div class="safemonCorner" style="position:absolute;z-order:9;top:'+rT+'px;left:'+rL+'px;width:'+rW+'px;height:'+rH+'px;overflow:hidden;"></div>';
+	}
+
+	d.innerHTML=p;
+	var e=s._tcge(d, 'div', 'safemonTitle');
+	if(e){
+		e.style.backgroundImage='url('+s._sfdpath+'360logo.gif)';
+	}
+	e=s._tcge(d, 'div', 'safemonClose');
+	if(e){
+		e.style.backgroundImage='url('+s._sfdpath+'warnclose.gif)';
+		e.attachEvent("onclick", function(){s._ge(s._spopname).style.display='none';});
+	}
+	e=s._tcge(d, 'div', 'safemonInfo');
+	if(e){
+		var ua=navigator.userAgent;
+		var vn=ua.indexOf("MSIE");
+		if(vn>0){
+			var un=ua.substr(vn+5);
+			var vn=un.indexOf(".");
+			if(vn>0){
+				un=un.substr(0,vn);
+				if(un>6){
+					e.style.height='auto';
+				}
+			}
+		}
+	}
+	e=s._tcge(d, 'a', 'safemonCloseTxt');
+	if(e){
+		e.attachEvent("onclick", function(){s._ge(s._spopname).style.display='none';return false;});
+	}
+	e=s._tcge(d, 'div', 'safemonBanner');
+	if(e){
+		e.style.backgroundImage='url('+s._sfdpath+'warnbanner.gif)';
+	}
+	e=s._tcge(d, 'div', 'safemonCorner');
+	if(e){
+		e.style.backgroundImage='url('+s._sfdpath+cornbkg+')';
+	}
+
+},
+_gethost:function(o, u, bIsAdLink){
+	var h=o.hostname;
+	if(bIsAdLink){
+		var n=u.indexOf(" ");
+		if(n != -1)
+			u=u.substring(0, n);
+		h=u;
+		n=h.indexOf("://");
+		if(n != -1)
+			h=h.substr(n+3);
+		n=h.indexOf("/");
+		if(n != -1)
+			h=h.substring(0, n);
+		n=h.indexOf(":");
+		if(n != -1)
+			h=h.substring(0, n);
+	}else
+		h=o.hostname;
+	return h;
+},
+_getbaiduurl:function(o){
+	var outText = o.parentNode.innerHTML;
+	var nStart = -1;
+	var str = '<FONT color=#008000 size=-1>';
+	var prarent = o.parentNode;
+	for(var i = 0; i < 4; i++) {
+		if((nStart = outText.indexOf(str)) == -1) {
+			prarent  = prarent.parentNode;
+			outText = prarent.outerHTML;
+		}
+	}
+	if(nStart == -1)
+		return null;
+	nStart = outText.indexOf(">", nStart + 1);
+	var End = outText.indexOf("</FONT>", nStart);
+	outText = outText.substring(nStart+1, End);
+	End = outText.indexOf(" ");
+	if(End != -1)
+		outText = outText.substring(0, End);
+	return outText;
+},
+nullobj:null
+};
+function safeMonUIShowImg(obj, nFlag, nOutLink, extInfo){
+	var s=safemonsepro;
+	if(nFlag!=0){// some item do nothing
+		var t=nFlag&0xff;
+		if(t==0x38||t==0x10||t==0x18){
+			var tid=0;
+			if(extInfo&&extInfo!=""){
+				var dinfo=s._decode64(extInfo);
+				var ds=dinfo.split('\t');
+				if(ds.length>=3)
+					tid=ds[2];
+			}
+			if((t==0x38&&tid!=1)||((t==0x10||t==0x18) && (tid==101||tid==102||tid==103)))
+				return;
+		}
+	}
+	var p=obj.parentNode;
+	var cn='__360smse__';
+	var e=s._ce('font');
+	s._seticoimg(e, nFlag);
+	s._setwh(e, 16, 16);
+	e.style.border="0px";
+	e.style.display="inline-block";
+	e.style.marginLeft="8px";
+	e.style.padding="0px";
+	e.style.cursor="pointer";
+	e.className=cn;
+	if(nOutLink == 1){
+		if(s._tcge(obj, 'font', cn))
+			return;
+		obj.appendChild(e);
+	}else if(nOutLink == 0){
+		if(s._tcge(obj.parentNode, 'font', cn))
+			return;
+		s._insertAfter(e, obj);
+	}
+	e.attachEvent("onclick", function(){s._popup(event, obj, e, nFlag, extInfo);return false;});
+	e.attachEvent("onmouseenter", function(){
+			var c=this;
+			var ev=event;
+			if(s._ocico==c) return;
+			if(s._nctimer>=0){
+				clearTimeout(s._nctimer);
+				s._nctimer=-1;
+			}
+			s._ocico=c;
+			s._nctimer=setTimeout(function(){
+				if(c==s._ocico){
+					s._popup(ev, obj, e, nFlag, extInfo);
+				}
+				}, 300);
+			});
+	e.attachEvent("onmouseleave", function(){if(this==s._ocico) s._ocico=null;});
+}
+function safeMonUIGetPath(filepath){
+	var s=safemonsepro;
+	s._init(filepath);
+	var d=s._ge(s._spopname);
+	if(d) d.style.display='none';
+}
+</SCRIPT>
+<title>百度搜索_熊猫团团圆圆</title>
+<style>body{color:#000;background:#fff;padding:7px 0 0;margin:0;position:relative}.p2{font-family:arial}.p1{font-family:arial}td{font-family:arial}th{font-family:arial}body{font-family:arial}h3{margin:0;padding:0;list-style:none}dd{margin:0;padding:0;list-style:none}dt{margin:0;padding:0;list-style:none}dl{margin:0;padding:0;list-style:none}li{margin:0;padding:0;list-style:none}ul{margin:0;padding:0;list-style:none}ol{margin:0;padding:0;list-style:none}form{margin:0;padding:0;list-style:none}p{margin:0;padding:0;list-style:none}input{padding-top:0;padding-bottom:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}img{border:0}table{border:0}td{font-size:9pt;line-height:18px}em{font-style:normal;color:#cc0000}a em{text-decoration:underline}cite{font-style:normal;color:#008000}a.m{color:#666}.m{color:#666}a.m:visited{color:#606}a.g{color:#008000}.g{color:#008000}.c{color:#77c}.f14{font-size:14px}.f10{font-size:10.5pt}.f16{font-size:16px}#foot{font-size:12px}#search{font-size:12px}#tool{font-size:12px}#head{font-size:12px}#u{font-size:12px}.p1{line-height:120%;margin-left:-12pt}.p2{width:100%;line-height:120%;margin-left:-12pt}#out{_margin-left:880px;_zoom:1}#in{_position:relative;_float:left;_margin-left:-880px}#wrapper{min-width:880px;_zoom:1}#container{padding-left:20px}#u{white-space:nowrap;position:absolute;right:10px;top:6px;_top:0;z-index:299}#u_m{color:#00c;cursor:pointer}#u_ms{text-decoration:underline}#u_m_tip{position:absolute;right:40px;top:24px;_top:26px;z-index:302;border:1px solid #9a99ff;display:none;background:#fff;overflow:hidden;width:100px}#u_m_tip a{display:block;line-height:22px;color:#0001cf;padding:0 10px;font-size:12px;text-decoration:none;border-bottom:1px solid #e6e6e6;width:100%}#u_m_tip a:hover{background:#d9e1f6}#u_m_tip a.last{border-bottom:0}#head{padding-left:20px}.fm{clear:both;position:relative;z-index:297}.nv{height:45px;position:relative;z-index:298}.nv .logo{float:left;margin-right:20px}.nv .tab{float:left;padding:20px 0 0;line-height:18px}#more{font-size:14px}#page{font-size:14px}.btn{font-size:14px}.nv b{font-size:14px}.nv a{font-size:14px}.nv a{color:#0000cc}.i{width:536px;*width:519px;height:32px;*height:20px;padding:3px 7px;padding-top:7px\9;font:16px arial;background:url(http://www.baidu.com/img/i-1.0.0.png) no-repeat -304px 0;_background-attachment:fixed;border:1px solid #b6b6b6;border-color:#7b7b7b #b6b6b6 #b6b6b6 #7b7b7b;vertical-align:top;margin-right:5px}.btn{width:95px;height:32px;padding:0;padding-top:2px\9;border:0;background:#ddd url(http://www.baidu.com/img/i-1.0.0.png);cursor:pointer}.btn_h{background-position:-100px 0}.btn_wr{width:97px;height:34px;display:inline-block;background:url(http://www.baidu.com/img/i-1.0.0.png) no-repeat -202px 0;_top:1px;*position:relative}.seth{margin-left:22px;display:none;behavior:url(#default#homepage)}.seth a{color:#00c}.setf{margin-left:22px;display:none}.setf a{color:#00c}#tb_mr{color:#00c;cursor:pointer;position:relative;z-index:298}#tb_mr b{font-weight:normal;text-decoration:underline}#tb_mr small{font-size:11px}#more{width:58px;height:100px;border:1px solid #9A99FF;background:#fff;position:absolute;z-index:298;left:452px;top:45px;*top:46px;overflow:hidden;display:none;outline:none}#more a{width:53px;height:25%;line-height:24px;display:block;padding:0 0 0 7px;color:#0001CF;text-decoration:none}#more a span{font-family:"宋体"}#more a:hover{background:#D9E1F6}#more div{height:1px;overflow:hidden;background:#ccf;margin:0 3px}#page{white-space:nowrap}#page{word-spacing:4px}#page .n{font-size:16px}#rs{width:100%;background:#eff2fa;padding:8px 0;margin:20px 0 0}#rs td{width:5%}#rs th{font-size:14px;font-weight:normal;line-height:19px;white-space:nowrap;text-align:left;vertical-align:top}#rs .tt{font-weight:bold;padding:0 10px 0 20px}#search{padding:35px 0 16px 20px}#search .btn_wr{vertical-align:middle}#foot{height:20px;line-height:20px;color:#77c;background:#e6e6e6;text-align:center}#foot span{color:#666}.site_tip{font-size:13px;line-height:18px;padding:3px 0 5px 72px;margin-bottom:20px;background:url(http://www.baidu.com/img/bg-1.0.0.gif) no-repeat}.to_tieba{font-size:16px;line-height:24px;margin:20px 0 0;padding:0 0 0 32px;background:url(http://www.baidu.com/img/bg-1.0.0.gif) no-repeat 0 -68px}.to_zhidao{font-size:16px;line-height:24px;margin:20px 0 0;padding:0 0 0 32px;background:url(http://www.baidu.com/img/bg-1.0.0.gif) no-repeat 0 -68px}.to_tieba{background-position:0 -102px}.f{line-height:115%;*line-height:120%;font-size:100%;width:33.7em;word-break:break-all;word-wrap:break-word}.h{margin-left:8px;width:100%}.r{word-break:break-all;cursor:hand;width:238px}.t{font-weight:normal;font-size:medium}.pl{padding-left:3px;height:8px;padding-right:2px;font-size:14px}a.mo:visited{color:#666;font-size:100%;line-height:10px}a.mo:link{color:#666;font-size:100%;line-height:10px}.mo{color:#666;font-size:100%;line-height:10px}.htb{margin-bottom:5px}.jc a{color:#cc0000}font[size="3"] a font{text-decoration:underline}a font[size="3"] font{text-decoration:underline}div.bbs{color:#707070;padding-top:3px}div.blog{color:#707070;padding-top:3px}.result{width:33.7em;table-layout:fixed}.result-op .f{word-wrap:normal}.nums{font-size:12px;color:#999}.tools{width:220px;position:absolute;top:10px}#mHolder{width:62px;position:relative;z-index:296;top:-18px;margin-left:9px;margin-right:-12px;display:none}#mCon{height:18px;position:absolute;right:7px;top:3px;top:6px\9;cursor:pointer;padding:0 18px 0 0;line-height:18px;background:url(http://www.baidu.com/img/bg-1.0.0.gif) no-repeat right -133px;background-position:right -135px\9}#mCon span{color:#00c;cursor:default;display:block}#mCon .hw{text-decoration:underline;cursor:pointer}#mMenu{width:56px;border:1px solid #9a99ff;position:absolute;right:7px;top:23px;display:none;background:#fff}#mMenu a{width:100%;height:100%;color:#00c;display:block;line-height:22px;text-indent:6px;text-decoration:none}#mMenu a:hover{background:#d9e1f6}#mMenu .ln{height:1px;background:#ccf;overflow:hidden;margin:2px;font-size:1px;line-height:1px}.op_LAMP{background:url("http://open.baidu.com/stat/image/Icon_Aladdin.gif") no-repeat 0 2px;color:#77C;display:inline-block;font-size:13px;height:12px;*height:14px;width:16px;text-decoration:none;zoom:1;}
+.EC_mr15{margin-left:0}.pd15{padding-left:0}.map_1{width:30em;font-size:80%;line-height:145%}.map_2{width:25em;font-size:80%;line-height:145%}.favurl{background-repeat:no-repeat;background-position:0 1px;padding-left:20px;}.dan_tip{font-size:12px;background:url(http://www.baidu.com/img/bg-1.0.0.gif) no-repeat left -156px;line-height:18px;padding-left:18px;margin:2px 0 0;}.dan_tip a{color:#656565;}</style>
+
+<SCRIPT>var bds={se:{}},name,location,navigate,bdQid="85e795bc0de89d46",al_arr=[],bdstoken="c761acc8ca14976640683e815928399c";var selfOpen = window.open;eval("var open = selfOpen;");function G(id){return document.getElementById(id);}function TagQ(tag,obj){return obj.getElementsByTagName(tag);}function h(obj){obj.style.behavior='url(#default#homepage)';obj.setHomePage('http://www.baidu.com');var img=window["BD_PS_C"+(new Date()).getTime()]=new Image();img.src="http://sclick.baidu.com/union.gif?fm=hp&tn=funshion010_oem_dg&t="+new Date().getTime();}function al_c(A){while(A.tagName!="TABLE"){A=A.parentNode;}return A.getAttribute("id");}function al_c2(n,c){while(c--){while((n=n.parentNode).tagName!="TABLE");};return n.getAttribute("id");}function c(q){if(q['fm']=='alop' && !('rsv_xpath' in q)){var p1 = q['p1'];if(p1 && G(p1).getAttribute('srcid')=='6677'){}else{return true;}}var p = window.document.location.href, sQ = '', sV = '', mu='', img = window["BD_PS_C" + (new Date()).getTime()] = new Image();for (v in q) {switch (v) {case "title":sV = encodeURIComponent(q[v].replace(/<[^<>]+>/g, ""));break;case "mu":case "url":sV = escape(q[v]);break;default:sV = q[v];}sQ += "&" + v + "=" + sV;}try{if (("p2" in q)&&G(q["p1"]).getAttribute("mu") && q["fm"]!="pl") {mu= "&mu=" + escape(G(q["p1"]).getAttribute("mu"));}}catch(e){};img.src = "http://sclick.baidu.com/union.gif?q=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2" + sQ + mu + "&rsv_sid=1082&cid=0&qid=85e795bc0de89d46&t="+new Date().getTime()+"&path="+p;return true;}function ns_c(q){var p = encodeURIComponent(window.document.location.href), sQ = '',wd='%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2', sV = '', mu='', img = window["BD_PS_C" + (new Date()).getTime()] = new Image();for (v in q) {switch (v) {case "title":sV = encodeURIComponent(q[v].replace(/<[^<>]+>/g, ""));break;case "url":sV = encodeURIComponent(q[v]);break;default:sV = q[v]}sQ += v + "=" + sV + "&"} mu= "&mu=" + p ;img.src = "http://nsclick.baidu.com/v.gif?pid=201&pj=www&" + sQ + "path="+p+"&wd="+wd+"&t="+new Date().getTime();return true;}window["bdUser"]="qhd_jmzh";window["login_success"]=[];window["bdQuery"] = "熊猫团团圆圆";window["bdUseFavo"] = "0";window["bdFavoOn"] = "0";window["bdCid"] = "0";window["bdSid"] = "1082";window["bdServerTime"] = "1322554362";</SCRIPT>
+
+<SCRIPT src="http://www.baidu.com/cache/global/js/tangram-1.3.4c1.0.js" 
+type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>function _aMC(o){var t = o,i = -1;while(t=t.parentNode){i=parseInt(t.getAttribute('id'));if(i>0) return i;}}(function(){window.A=bds.aladdin={};A.ids=[];var t='';A.has=t.length>0;if(t.indexOf('x') != -1){window.appListExist = 1;}if(A.has){document.write('<script src="http://www.baidu.com/cache/aladdin/base.js?v=0.2"></' + 'script>');}})();</SCRIPT>
+
+<style>.bd_dialog {
+	BORDER-RIGHT: #a8b9eb 2px solid; BORDER-TOP: #a8b9eb 2px solid; BACKGROUND: #dae4ff; OVERFLOW: hidden; BORDER-LEFT: #a8b9eb 2px solid; COLOR: #333; BORDER-BOTTOM: #a8b9eb 2px solid
+}
+.bd_dialog_handle {
+	BACKGROUND: url('bg1.gif') repeat-x; OVERFLOW: hidden; WIDTH: 100%; CURSOR: move; HEIGHT: 30px; moz-user-select: none
+}
+.bd_dialog_title {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FLOAT: left; MARGIN: 3px 10px; OVERFLOW: hidden; LINE-HEIGHT: 24px
+}
+.bd_dialog_close {
+	BACKGROUND: url('close.gif'); FLOAT: right; MARGIN: 6px; OVERFLOW: hidden; WIDTH: 19px; CURSOR: pointer; HEIGHT: 19px
+}
+.bd_dialog_main {
+	BORDER-RIGHT: #c3cff2 1px solid; BORDER-TOP: #c3cff2 1px solid; BACKGROUND: #fff; MARGIN: 5px; OVERFLOW: hidden; BORDER-LEFT: #c3cff2 1px solid; WIDTH: auto; BORDER-BOTTOM: #c3cff2 1px solid; HEIGHT: auto
+}
+.bd_tab {
+	MARGIN: 20px 20px 10px
+}
+.bd_tab_btns {
+	PADDING-LEFT: 10px; BACKGROUND: url('p.gif') repeat-x 50% bottom; OVERFLOW: hidden; HEIGHT: 28px; TEXT-ALIGN: center
+}
+.bd_tab_conts {
+	MARGIN-TOP: 15px
+}
+.bd_tab_btn {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url('bb.gif'); FLOAT: left; MARGIN-LEFT: 6px; OVERFLOW: hidden; WIDTH: 76px; CURSOR: pointer; COLOR: #00c; LINE-HEIGHT: 28px; TEXT-DECORATION: underline
+}
+.bd_tab_btn_s {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url('bs.gif'); FLOAT: left; MARGIN-LEFT: 6px; OVERFLOW: hidden; WIDTH: 76px; CURSOR: pointer; LINE-HEIGHT: 28px
+}
+.bd_tab_cont {
+	DISPLAY: none; HEIGHT: auto
+}
+.bd_tab_cont_s {
+	DISPLAY: block
+}
+#login_div {
+	FONT-SIZE: 14px
+}
+#login_div U {
+	DISPLAY: inline-block; FONT-SIZE: 13px; COLOR: #f00; HEIGHT: auto; TEXT-DECORATION: none
+}
+#login_msg_div {
+	OVERFLOW: hidden; HEIGHT: 18px
+}
+#login_cap {
+	MARGIN-LEFT: 20px
+}
+#login_msg_div {
+	MARGIN-LEFT: 20px
+}
+#login_tb_div {
+	MARGIN-LEFT: 20px
+}
+#login_tb TD {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 0px; FONT-SIZE: 14px; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: middle; LINE-HEIGHT: normal; PADDING-TOP: 4px
+}
+#login_tb TD.lb {
+	WIDTH: 60px
+}
+#login_tb INPUT.lt {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; WIDTH: 170px; LINE-HEIGHT: 18px; PADDING-TOP: 1px; HEIGHT: 18px
+}
+#login_tb INPUT.v {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; LINE-HEIGHT: 18px; PADDING-TOP: 1px; HEIGHT: 18px
+}
+#login_tb LABEL {
+	FONT-SIZE: 13px
+}
+#login_tb .c9 {
+	FONT-SIZE: 13px; COLOR: #999
+}
+#login_check {
+	LINE-HEIGHT: 130%
+}
+#login_v_tr {
+	DISPLAY: none
+}
+#login_v_img {
+	BORDER-RIGHT: #000 1px solid; BORDER-TOP: #000 1px solid; BORDER-LEFT: #000 1px solid; BORDER-BOTTOM: #000 1px solid
+}
+#login_tb A.la {
+	DISPLAY: inline-block; FONT-SIZE: 13px; MARGIN-BOTTOM: 4px; VERTICAL-ALIGN: middle; COLOR: #03c; LINE-HEIGHT: 30px
+}
+#login_submit {
+	FONT-SIZE: 14px; WIDTH: 78px; HEIGHT: 28px
+}
+#login_line {
+	BACKGROUND: #d9e1f7; MARGIN: 20px 0px; OVERFLOW: hidden; WIDTH: auto; HEIGHT: 1px
+}
+#login_sug {
+	FONT-WEIGHT: bold; WIDTH: 100%; LINE-HEIGHT: 40px; TEXT-ALIGN: center
+}
+#login_u_msg {
+	WIDTH: 40px
+}
+#login_p_msg {
+	WIDTH: 40px
+}
+</style>
+<div id="out" style="_margin-left: 880px; _zoom: 1">
+	<div id="in" style="_position: relative; _float: left; _margin-left: -880px">
+		<div id="wrapper" style="min-width: 880px; _zoom: 1">
+			<div id="container" style="padding-left: 20px">
+				<table class="result" id="table1" cellSpacing="0" cellPadding="0">
+					<tr>
+						<td class="f">
+						<h3 class="t">
+						<a onmousedown="return c({'fm':'as','F':'779317EA','F1':'9D73F1E4','F2':'4CA6BE6B','F3':'54E5243F','T':'1322554362','title':this.innerHTML,'url':this.href,'p1':1,'y':'E977BDBF'})" target="_blank" href="http://baike.baidu.com/view/30407.htm">
+						<em style="text-decoration: underline; font-style: normal; color: #cc0000">
+						团团圆圆</em>_百度百科</a> </h3>
+						<font size="-1">四川汶川大地震发生后，<em style="font-style: normal; color: #cc0000">大熊猫</em>“<em style="font-style: normal; color: #cc0000">团团</em>”“<em style="font-style: normal; color: #cc0000">圆圆</em>”圈舍后面的山体垮塌，巨大的石块将圈舍完全毁坏。幸运的是机警的“<em style="font-style: normal; color: #cc0000">团团</em>”“<em style="font-style: normal; color: #cc0000">圆圆</em>”都跑出了圈舍。5月12日，“<em style="font-style: normal; color: #cc0000">团团</em>”...<br>
+						<span class="g">baike.baidu.com/view/30407.htm 2011-8-4
+						</span>-
+						<a class="m" target="_blank" href="http://cache.baidu.com/c?m=9d78d513d9d437ad4f9be5697c17c015134381132ba6a6020ed38439e5732a46506793ac51240774d3d20a6116df4948adb0687d6d4566f58cc9fb57c0ebc17376df3034074cd51a44940eafbc17789e3dd401beea04e6b8f63096b9d2a485120c&p=93759a40d0d900b717a7c7710c53&user=baidu&fm=sc&query=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2&qid=85e795bc0de89d46&p1=1">
+						百度快照</a><br>
+　</font></td>
+					</tr>
+				</table>
+				<br>
+　<table class="result" id="table2" cellSpacing="0" cellPadding="0">
+					<tr>
+						<td class="f">
+						<h3 class="t">
+						<a onmousedown="return c({'fm':'as','F':'779717EA','F1':'9D73F0E4','F2':'4CA6BE6B','F3':'54E5243F','T':'1322554362','title':this.innerHTML,'url':this.href,'p1':2,'y':'CFEEB36F'})" target="_blank" href="http://zhidao.baidu.com/question/52967626.html">
+						<em style="text-decoration: underline; font-style: normal; color: #cc0000">
+						大熊猫团团圆圆</em> 的样子 和名字的意义_百度知道</a> </h3>
+						<font size="-1">去年1月，大陆选出赠台<em style="font-style: normal; color: #cc0000">熊猫</em> 
+						“<em style="font-style: normal; color: #cc0000">团团</em>”、“<em style="font-style: normal; color: #cc0000">圆圆</em>”，可爱的模样，令人印象深刻，...徐小姐：很好认的，你看<em style="font-style: normal; color: #cc0000">圆圆</em>，<em style="font-style: normal; color: #cc0000">圆圆</em>那个脸是很圆的，看上去很秀气的那个样子，...<br>
+						<span class="g">zhidao.baidu.com/question/52967626.html 
+						2008-5-18 </span>-
+						<a class="m" target="_blank" href="http://cache.baidu.com/c?m=9f65cb4a8c8507ed4fece763105e8d3d4f07dd743ca080462482d45f93130a1c187ba0fc7063565f8e99616001a44d59eef0326537747af1c4969c0f80fbc42738fe2523066d913013c46aa5dc4755d651e64d98a80e96cce74394b9d3a3c82255dd23056df6f69c2a00&p=9778d61086cc42ab13b4c771075d&user=baidu&fm=sc&query=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2&qid=85e795bc0de89d46&p1=2">
+						百度快照</a><br>
+　</font></td>
+					</tr>
+				</table>
+				<br>
+　<table class="result" id="table3" cellSpacing="0" cellPadding="0" mu="http://image.baidu.com/i?tn=baiduimage&amp;ct=201326592&amp;lm=-1&amp;cl=2&amp;fr=ala1&amp;word=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2">
+					<tr>
+<SCRIPT>if(typeof (BD)!="undefined"){BD.IMG={}}else{BD={};BD.IMG={}}BD.IMG.err=function(B){var C=B;while(C.tagName!="A"){C=C.parentNode}C.style.display="none";var A=window["__log__"+(new Date()).getTime()]=new Image();A.src="http://open.baidu.com/stat/al_e.gif?img="+B.src+"&link="+C.href+"&"+new Date()*Math.random()};BD.IMG.disabledInput=[];BD.IMG.actions={ini:function(){var A="<a href='#' onclick='return BD.IMG.actions.showReport();'>举报图片</a>";document.getElementById("ala_img_report").innerHTML=A;BD.IMG.hideReportDiv();return false},showReport:function(){var A="请举报图片&nbsp;-&nbsp;<a href='#' onclick='return BD.IMG.actions.ini();'>取消</a>&nbsp;";document.getElementById("ala_img_report").innerHTML=A;BD.IMG.showReportDiv();return false},reportPic:function(G,B,D,F,H){H.value="已举报";H.disabled=true;H.style.width="62px";BD.IMG.disabledInput.push(D);var E=document.cookie.match(/BAIDUID=([^;]+)/);var C="";if(E!=null){C="&uid="+E[1]}var A=new Image();A.src="http://p.baidu.com/4.gif?p=18&fr=ala2&u="+B+"&f="+G+"&di="+D+"&q="+F+C+"&"+new Date()*Math.random();this.hideReport()},hideReport:function(){var C=(document.getElementById("ala_img_results").childNodes.length-1)/2;var B="感谢您的举报&nbsp;-&nbsp;<a href='#' onclick='return BD.IMG.actions.showReport();'>继续举报</a>";var D="感谢您的举报";var A=BD.IMG.disabledInput.length;if(A<C&&A>0){document.getElementById("ala_img_report").innerHTML=B}else{if(A==0){this.ini()}else{document.getElementById("ala_img_report").innerHTML=D}}BD.IMG.hideReportDiv();return false}};BD.IMG.showReportDiv=function(){var E=document.getElementById("ala_img_results").childNodes;for(var D=0,B=E.length;D<B;D++){var C=E[D];var A=C.childNodes[1]||null;if(A!=null){A.style.display=""}}document.getElementById("ala_img_desc").style.display="none"};BD.IMG.hideReportDiv=function(){var E=document.getElementById("ala_img_results").childNodes;for(var D=0,B=E.length;D<B;D++){var C=E[D];var A=C.childNodes[1]||null;if(A!=null){A.style.display="none"}}document.getElementById("ala_img_desc").style.display=""};</SCRIPT>
+
+						<style>#ala_img_report{font-size:13px;}#ala_img_report a{color:#77c;}#ala_img_results dl{margin:0 5px 0 0;text-align:center;float:left;display:inline;}#ala_img_results dt{margin:0;text-align:center;}#ala_img_results dd{margin:0;text-align:center;}#ala_img_results dd{margin-top:8px;}#ala_img_results dt img{display:block;}#ala_img_desc{color:#008000;font-size:13px;}</style>
+						<td class="f">
+						<h3 class="t">
+						<a onclick="c({'fm':'altp1','title':this.innerHTML,'url':this.href,'p1':al_c(this)});" target="_blank" href="http://image.baidu.com/i?tn=baiduimage&ct=201326592&lm=-1&cl=2&fr=ala1&word=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2">
+						<font size="3">
+						<em style="text-decoration: underline; font-style: normal; color: #cc0000">
+						熊猫团团圆圆</em>_百度图片</font></a>&nbsp;-&nbsp;<span id="ala_img_report" style="font-size: 13px"><a onclick="return BD.IMG.actions.showReport()" style="color: #77c" href="#">举报图片</a></span>
+						</h3>
+						<div id="ala_img_results" style="MARGIN: 6px 0px 4px">
+							<dl style="text-align: center; float: left; display: inline; list-style-type: none; margin-left: 0; margin-right: 5px; margin-top: 0; margin-bottom: 0; padding: 0">
+								<dt style="text-align: center; list-style-type: none; margin: 0; padding: 0">
+								<a style="FONT-SIZE: 0px; TEXT-DECORATION: none" onclick="c({'fm':'altp1','url':this.href,'p1':al_c(this),'p2':0,'p3':'1'});" target="_blank" href="http://image.baidu.com/i?ct=503316480&z=0&tn=baiduimagedetail&cl=2&cm=1&sc=0&lm=-1&fr=ala2&pn=1&rn=1&di=71173776885&ln=1971&word=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2">
+								<img style="display: block; border: 1px solid #6963e7" onerror="BD.IMG.err(this)" src="http://picache.baidu.com/media?wd=E590B66D7A818047C0BE992128D3F9A769A09A2D213BB7288A0260FC8622E129B454382D48CDC995A125D04805E5ED65E88478803AC89781&src=http://t2.baidu.com/it/u=2709694801,945058824&fm=0&gp=0.jpg&def=local://neverfill"></a>
+								</dt>
+								<dd style="display: none; text-align: center; list-style-type: none; margin-left: 0; margin-right: 0; margin-top: 8px; margin-bottom: 0; padding: 0">
+								<input style="width: 50px; height: 23px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 0; padding-bottom: 0" onclick="BD.IMG.actions.reportPic('http://www.viewcn.com/thpl/tbch/2008/03/885977.html','http://www.viewcn.com/thpl/tbch/images/ql251107121.jpg','71173776885','',this);" type="button" value="举报"></dd>
+							</dl>
+							<dl style="text-align: center; float: left; display: inline; list-style-type: none; margin-left: 0; margin-right: 5px; margin-top: 0; margin-bottom: 0; padding: 0">
+								<dt style="text-align: center; list-style-type: none; margin: 0; padding: 0">
+								<a style="FONT-SIZE: 0px; TEXT-DECORATION: none" onclick="c({'fm':'altp1','url':this.href,'p1':al_c(this),'p2':0,'p3':'2'});" target="_blank" href="http://image.baidu.com/i?ct=503316480&z=0&tn=baiduimagedetail&cl=2&cm=1&sc=0&lm=-1&fr=ala2&pn=3&rn=1&di=31732707843&ln=1971&word=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2">
+								<img style="display: block; border: 1px solid #6963e7" onerror="BD.IMG.err(this)" src="http://picache.baidu.com/media?wd=E590B66D7A818047C0BE992128D3F9A769A09A2D213BB7288A0260FC8622E129809F0CAA9E7BA84EC4F63AF459E1C50A9B467462AEE95BF7&src=http://t3.baidu.com/it/u=1415806294,3320475056&fm=3&gp=0.jpg&def=local://neverfill"></a>
+								</dt>
+								<dd style="display: none; text-align: center; list-style-type: none; margin-left: 0; margin-right: 0; margin-top: 8px; margin-bottom: 0; padding: 0">
+								<input style="width: 50px; height: 23px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 0; padding-bottom: 0" onclick="BD.IMG.actions.reportPic('http://hi.baidu.com/adviserhsu/album/item/2b3dc9116dc2be4d5aaf539d.html','http://hiphotos.baidu.com/adviserhsu/pic/item/2b3dc9116dc2be4d5aaf539d.jpg','31732707843','',this);" type="button" value="举报"></dd>
+							</dl>
+							<dl style="text-align: center; float: left; display: inline; list-style-type: none; margin-left: 0; margin-right: 5px; margin-top: 0; margin-bottom: 0; padding: 0">
+								<dt style="text-align: center; list-style-type: none; margin: 0; padding: 0">
+								<a style="FONT-SIZE: 0px; TEXT-DECORATION: none" onclick="c({'fm':'altp1','url':this.href,'p1':al_c(this),'p2':0,'p3':'3'});" target="_blank" href="http://image.baidu.com/i?ct=503316480&z=0&tn=baiduimagedetail&cl=2&cm=1&sc=0&lm=-1&fr=ala2&pn=5&rn=1&di=23404328520&ln=1971&word=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2">
+								<img style="display: block; border: 1px solid #6963e7" onerror="BD.IMG.err(this)" src="http://picache.baidu.com/media?wd=E590B66D7A818047C0BE992128D3F9A769A09A2D213BB7288A0260FC8622E129CCEFD1FE9E9D8BDF7CEFE3E5AA8A06B5A696251A0451D6C0&src=http://t3.baidu.com/it/u=2498763455,1828235425&fm=0&gp=0.jpg&def=local://neverfill"></a>
+								</dt>
+								<dd style="display: none; text-align: center; list-style-type: none; margin-left: 0; margin-right: 0; margin-top: 8px; margin-bottom: 0; padding: 0">
+								<input style="width: 50px; height: 23px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 0; padding-bottom: 0" onclick="BD.IMG.actions.reportPic('http://www.chinataiwan.org/zt/wj/zhongqiu/zhongqiuyueyuanrentuan/200809/t20080911_742451.htm','http://www.chinataiwan.org/zt/wj/zhongqiu/zhongqiuyueyuanrentuan/200809/W020080911502402355268.jpg','23404328520','%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2',this);" type="button" value="举报"></dd>
+							</dl>
+							<dl style="text-align: center; float: left; display: inline; list-style-type: none; margin-left: 0; margin-right: 5px; margin-top: 0; margin-bottom: 0; padding: 0">
+								<dt style="text-align: center; list-style-type: none; margin: 0; padding: 0">
+								<a style="FONT-SIZE: 0px; TEXT-DECORATION: none" onclick="c({'fm':'altp1','url':this.href,'p1':al_c(this),'p2':0,'p3':'4'});" target="_blank" href="http://image.baidu.com/i?ct=503316480&z=0&tn=baiduimagedetail&cl=2&cm=1&sc=0&lm=-1&fr=ala2&pn=6&rn=1&di=42627852540&ln=1971&word=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2">
+								<img style="display: block; border: 1px solid #6963e7" onerror="BD.IMG.err(this)" src="http://picache.baidu.com/media?wd=E590B66D7A818047C0BE992128D3F9A769A09A2D213BB7288A0260FC8622E129D7CFC495DBA6A7E9617FA63F11A751AD3FB8E491F1E3006F&src=http://t3.baidu.com/it/u=3746801153,2748606202&fm=0&gp=0.jpg&def=local://neverfill"></a>
+								</dt>
+								<dd style="display: none; text-align: center; list-style-type: none; margin-left: 0; margin-right: 0; margin-top: 8px; margin-bottom: 0; padding: 0">
+								<input style="width: 50px; height: 23px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 0; padding-bottom: 0" onclick="BD.IMG.actions.reportPic('http://www.aijia800.com/?product-198.html','http://www.aijia800.com/images/goods/intro/ac453448-d724-435f-a9ba-32a980740bb5/ee45f3096d2a5a726550a65821229560.jpg','42627852540','',this);" type="button" value="举报"></dd>
+							</dl>
+							<div style="CLEAR: both">
+　</div>
+						</div>
+						<span id="ala_img_desc" style="color: #008000; font-size: 13px">
+						image.baidu.com&nbsp;-&nbsp;<a style="COLOR: #666" target="_blank" href="http://image.baidu.com/i?tn=baiduimage&ct=201326592&lm=-1&cl=2&fr=ala1&word=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2">查看全部1,970张图片</a></span></td>
+					</tr>
+				</table>
+				<br>
+　<table class="result" id="table4" cellSpacing="0" cellPadding="0">
+					<tr>
+						<td class="f">
+						<h3 class="t">
+						<a onmousedown="return c({'fm':'as','F':'779317EA','F1':'9D73F1E4','F2':'4CA6BE6B','F3':'54E5243F','T':'1322554362','title':this.innerHTML,'url':this.href,'p1':4,'y':'6CFDFAEA'})" target="_blank" href="http://news.qq.com/zt/2008/xmft/">
+						<em style="text-decoration: underline; font-style: normal; color: #cc0000">
+						大熊猫团团圆圆</em>赴台_新闻中心_腾讯网</a> </h3>
+						<font size="-1">赠台<em style="font-style: normal; color: #cc0000">大熊猫团团</em>和圆圆已经抵达它们的新家——台北市立动物园新光特展馆…[详细][图集][FLASH][幻灯：<em style="font-style: normal; color: #cc0000">团团圆圆</em>成长记][祝福] 
+						·团团、圆圆开始到台第一餐 没...<br>
+						<span class="g">news.qq.com/zt/2008/xmft/ 2011-11-18
+						</span>-
+						<a class="m" target="_blank" href="http://cache.baidu.com/c?m=9d78d513d9d437ad4f9be5697c17c015134381132ba6a6020ed38439e5732a46506793ac51240774d3d20a6116df4948adb0687d6d4566f58cc9fb57c0e7c56d6e9f2743335f9141658244f0d60e63dc209258e3b253b8eeb62f&p=9a7dc54ad5c25add44be9b7a114e&user=baidu&fm=sc&query=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2&qid=85e795bc0de89d46&p1=4">
+						百度快照</a><br>
+　</font></td>
+					</tr>
+				</table>
+				<br>
+　<table class="result" id="table5" cellSpacing="0" cellPadding="0">
+					<tr>
+						<td class="f">
+						<h3 class="t">
+						<a onmousedown="return c({'fm':'as','F':'779717EA','F1':'9D33F1E4','F2':'4CA6BEEA','F3':'54E5243F','T':'1322554362','title':this.innerHTML,'url':this.href,'p1':5,'y':'A77F2E7E'})" target="_blank" href="http://www.xinhuanet.com/tw/20081222/">
+						<em style="text-decoration: underline; font-style: normal; color: #cc0000">
+						大熊猫团团圆圆</em>和珙桐树抵达台北桃园机场</a> </h3>
+						<font size="-1">
+						<em style="font-style: normal; color: #cc0000">大熊猫</em>“<em style="font-style: normal; color: #cc0000">团团</em>”“<em style="font-style: normal; color: #cc0000">圆圆</em>”来台近一周，由于初期适应环境问题，体重一度下降较多，但近日体重已经开始恢复。台北市立动物园发言人金仕谦在接受本社记者采访时说：“...<br>
+						<span class="g">www.xinhuanet.com/tw/20081222/ 
+						2008-12-31 </span>-
+						<a class="m" target="_blank" href="http://cache.baidu.com/c?m=9f65cb4a8c8507ed4fece763105392230e54f729678b8a522c88c40e84642c101a39fefd623f1006d1cf7f6701af5448afad7624381456b58cbef95dacba855b259f2644676df05663d40edebd5154c637912afed91ff0caf025e5a8c5a3df&p=882a9f42999b1df20be293264b0d&user=baidu&fm=sc&query=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2&qid=85e795bc0de89d46&p1=5">
+						百度快照</a><br>
+　</font></td>
+					</tr>
+				</table>
+				<br>
+　<table class="result" id="table6" cellSpacing="0" cellPadding="0">
+					<tr>
+						<td class="f">
+						<h3 class="t">
+						<a onmousedown="return c({'fm':'as','F':'779717EA','F1':'9D73F1E4','F2':'4CA6BE6B','F3':'54E5243F','T':'1322554362','title':this.innerHTML,'url':this.href,'p1':6,'y':'C9C7DF76'})" target="_blank" href="http://www.china.com.cn/overseas/node_7058020.htm">
+						赠台<em style="text-decoration: underline; font-style: normal; color: #cc0000">大熊猫</em>“<em style="text-decoration: underline; font-style: normal; color: #cc0000">团团圆圆</em>”踏上赴台路_中国网</a>
+						</h3>
+						<font size="-1">
+						<em style="font-style: normal; color: #cc0000">大熊猫团团</em>、圆圆正式亮相 
+						台民众争相先睹为快 初三观看<em style="font-style: normal; color: #cc0000">团团圆圆</em>的民众到2.2万上限 
+						28日大年初三，台北天气转好，台北市立动物园也迎来了观看大熊猫的人潮。不到13...<br>
+						<span class="g">www.china.com.cn/overseas/node_7058020.htm 
+						2011-11-7 </span>-
+						<a class="m" target="_blank" href="http://cache.baidu.com/c?m=9d78d513d9d437ad4f9be5697c17c015134381132ba6a6020ed38439e5732a46506793ac51240774d3d20a6116df4948adb0687d6d4566f58cc9fb57c0fed76d388850652a47da1205d36efe961932c157c106f4f25db0fab165c0efcf8f820204dd54717f82f781580016dd6f874e77bc&p=c4759a46d4c71cfb1281c7710a0089&user=baidu&fm=sc&query=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2&qid=85e795bc0de89d46&p1=6">
+						百度快照</a><br>
+　</font></td>
+					</tr>
+				</table>
+				<br>
+　<table class="result" id="table7" cellSpacing="0" cellPadding="0">
+					<tr>
+						<td class="f">
+						<h3 class="t">
+						<a onmousedown="return c({'fm':'as','F':'779717EA','F1':'9D73F1C4','F2':'4CA6BE6B','F3':'54E5243F','T':'1322554362','title':this.innerHTML,'url':this.href,'p1':7,'y':'F5F7FEFB'})" target="_blank" href="http://www.gov.cn/jrzg/2008-12/23/content_1185202.htm">
+						<em style="text-decoration: underline; font-style: normal; color: #cc0000">
+						大熊猫</em>“<em style="text-decoration: underline; font-style: normal; color: #cc0000">团团</em>”“<em style="text-decoration: underline; font-style: normal; color: #cc0000">圆圆</em>”赴台旅程画上圆满句号</a>
+						</h3>
+						<font size="-1">12月23日下午5时许，台湾长荣航空公司载运赠台<em style="font-style: normal; color: #cc0000">大熊猫</em>“<em style="font-style: normal; color: #cc0000">团团</em>”“<em style="font-style: normal; color: #cc0000">圆圆</em>”的专机抵达台北桃园机场。这是专机降落后，工作人员转运“<em style="font-style: normal; color: #cc0000">团团</em>”“<em style="font-style: normal; color: #cc0000">圆圆</em>”。新华社记者 
+						赵博...<br>
+						<span class="g">www.gov.cn/jrzg/2008-12/23/content_118520 
+						... 2008-12-24 </span>-
+						<a class="m" target="_blank" href="http://cache.baidu.com/c?m=9d78d513d9d437ad4f9be5697c17c015134381132ba6a6020ed38439e5732a46506793ac51240774d3d20a6116df4948adb0687d6d4566f58cc9fb57c0fed76d388850612d589141658245b293066d943d9058eba50ee7ccf3328eaed3ce8e090f8c04593c97f7ff59031ecd6ff21426e3d1c30e4a&p=8c3dcd078d904ea808e297755664&user=baidu&fm=sc&query=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2&qid=85e795bc0de89d46&p1=7">
+						百度快照</a><br>
+　</font></td>
+					</tr>
+				</table>
+				<br>
+　<table class="result" id="table8" cellSpacing="0" cellPadding="0">
+					<tr>
+						<td class="f">
+						<h3 class="t">
+						<a onmousedown="return c({'fm':'as','F':'779717EA','F1':'9D73F1E4','F2':'4CA6BE6B','F3':'54E5243F','T':'1322554362','title':this.innerHTML,'url':this.href,'p1':8,'y':'9FFEFF5B'})" target="_blank" href="http://video.sina.com.cn/news/s/v/2009-10-26/143246861.shtml">
+						视频：赴台<em style="text-decoration: underline; font-style: normal; color: #cc0000">大熊猫团团圆圆</em>练腿力准备圆房_新浪视频_新浪网</a>
+						</h3>
+						<font size="-1">2009年10月26日... 大陆赠台<em style="font-style: normal; color: #cc0000">大熊猫</em>“<em style="font-style: normal; color: #cc0000">团团</em>”“<em style="font-style: normal; color: #cc0000">圆圆</em>”到台湾快一年了，他们不仅逐渐适应了台湾的新居，也到了成熟的年龄，台北动物园近来对他们进行体能训练，希望他们明年...<br>
+						<span class="g">
+						video.sina.com.cn/news/s/v/2009-10-26/143 ... 2009-10-26
+						</span>-
+						<a class="m" target="_blank" href="http://cache.baidu.com/c?m=9f65cb4a8c8507ed4fece76310528c304e0997634b968b492cc3933fc23904564711b2e73a7e474192d83d7a45b2495ee8fb2172410022a09bbe884ec0b894292f8e233e741f9141659243e9941831847dd00ce6b86fe5ad864384dfd3c4ac5e44cb23120bf6e7fa5d1765bc78811326e2d68e3e134860bafa4663e82977&p=882a914493904eaa2ab6dd3c4a51&user=baidu&fm=sc&query=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2&qid=85e795bc0de89d46&p1=8">
+						百度快照</a><br>
+　</font></td>
+					</tr>
+				</table>
+				<br>
+　<table class="result" id="table9" cellSpacing="0" cellPadding="0">
+					<tr>
+						<td class="f">
+						<h3 class="t">
+						<a onmousedown="return c({'fm':'as','F':'779717EA','F1':'9D73F1E4','F2':'4CA6BE6B','F3':'54E5243F','T':'1322554362','title':this.innerHTML,'url':this.href,'p1':9,'y':'B4EEEEFE'})" target="_blank" href="http://news.sina.com.cn/z/video/ztdxmft">
+						赠台<em style="text-decoration: underline; font-style: normal; color: #cc0000">大熊猫</em>赴台视频集-新闻中心</a>
+						</h3>
+						<font size="-1">赠台<em style="font-style: normal; color: #cc0000">大熊猫团团圆圆</em>于23日晚7时许抵达台北木栅动物园，经过三个多小时的长途旅行没有影响两个小家伙的食欲，<em style="font-style: normal; color: #cc0000">团团圆圆</em>开始赴台后的首次进餐。[详细] 
+						[评论 ${...<br>
+						<span class="g">news.sina.com.cn/z/video/ztdxmft 
+						2010-4-1 </span>-
+						<a class="m" target="_blank" href="http://cache.baidu.com/c?m=9f65cb4a8c8507ed4fece763104a8023584380147d8c8c4668d4e419ce3b4c413037bfa66f3f545f8592217a49e91f16b5a47066725e60e194dffe48cacde33f5e8930477a0b873105a26fb8ba4132b056872beeb81897ad863484ded2c4a95244ba53&p=cb6fcf15d9c440eb2aa9c771084e&user=baidu&fm=sc&query=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2&qid=85e795bc0de89d46&p1=9">
+						百度快照</a><br>
+　</font></td>
+					</tr>
+				</table>
+				<br>
+　<table class="result" id="table10" cellSpacing="0" cellPadding="0">
+					<tr>
+						<td class="f">
+						<h3 class="t">
+						<a onmousedown="return c({'fm':'as','F':'779717EA','F1':'9D73F1E4','F2':'4CA6BE6B','F3':'54E5243F','T':'1322554362','title':this.innerHTML,'url':this.href,'p1':10,'y':'9FFAADAA'})" target="_blank" href="http://www.chinanews.com/tw/2011/02-23/2862955.shtml">
+						国台办：赠台<em style="text-decoration: underline; font-style: normal; color: #cc0000">熊猫团团圆圆</em>下一代将留在台湾——中新网</a>
+						</h3>
+						<font size="-1">2011年2月23日...2月12日，台北市立动物园发布新闻稿称，为了培训两只<em style="font-style: normal; color: #cc0000">大熊猫</em>“<em style="font-style: normal; color: #cc0000">团团</em>”、“<em style="font-style: normal; color: #cc0000">圆圆</em>”相处互动的经验，在发情行为还没完全消退期间，将不定时短暂停展，俟机...<br>
+						<span class="g">
+						www.chinanews.com/tw/2011/02-23/2862955.shtml 2011-2-23
+						</span>-
+						<a class="m" target="_blank" href="http://cache.baidu.com/c?m=9d78d513d9d437ad4f9be5697c17c015134381132ba6a6020ed38439e5732a46506793ac51240774d3d20a6116df4948adb0687d6d4566f58cc9fb57c0fed76d388850652a47da124e845ceedc4652907dcf47afea04e7b8f3318eacd2c4df2253cb4e057084f0805d0703ca18b14e77bcf8&p=882a9444c7904ea81ab0ca60174b&user=baidu&fm=sc&query=%D0%DC%C3%A8%CD%C5%CD%C5%D4%B2%D4%B2&qid=85e795bc0de89d46&p1=10">
+						百度快照</a><br>
+　</font></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>

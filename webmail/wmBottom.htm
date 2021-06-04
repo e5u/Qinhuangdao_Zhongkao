@@ -1,0 +1,61 @@
+<%@ Language=VBScript %>
+<!--#include file="connsql.ASP"-->
+<html>
+<head>
+<title>168电子邮件系统</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<link href="images/css.css" rel="stylesheet" type="text/css">
+<base target="contents">
+</head>
+<%
+   If session("kaohao") = "" then
+   	  Response.Write "<div align=center>"
+      Response.Write "<p>&nbsp;</p><p>&nbsp;</p>"
+      Response.Write "<H3>连接失效,您离开的时间太长了,请重新登录</H3>"
+      Response.Write "<a href='default.htm' name='link' target='_top'></a>"
+      Response.Write "<p>&nbsp;</p>"
+      Response.Write "<input type='button' value='重新登录' name='cancel' id=cancel>"
+      Response.Write "</div>"
+      
+      Response.Write "<SCRIPT LANGUAGE=VBscript> " & Chr(13) & Chr(10)
+      Response.Write "<!-- " & Chr(13) & Chr(10)
+      Response.Write "Sub cancel_onclick " & Chr(13) & Chr(10)
+      Response.Write "link.click() "  & Chr(13) & Chr(10)
+      Response.Write "End Sub " & Chr(13) & Chr(10)
+      Response.Write "!-->" & Chr(13) & Chr(10)
+      Response.Write "</SCRIPT>" & Chr(13) & Chr(10)
+      Response.End
+   End If
+%>
+<%
+   MYRS.Open "select * from webmail where mail_Type=1 and stu_no='"& session("kaohao") &"' and qst_no='"& session("passwd") & "'"
+   Session("MailsNum")= MYRS.RecordCount
+   MYRS.Close		
+
+   MYRS.Open "select * from webmail where mail_Type=2 and stu_no='"& session("kaohao") &"' and qst_no='"& session("passwd") & "'"
+   Session("MailsForModiNum")= MYRS.RecordCount
+   MYRS.Close		
+   
+   MYRS.Open "select * from webmail where mail_Type=3 and stu_no='"& session("kaohao") &"' and qst_no='"& session("passwd") & "'"
+   Session("MailsForSendNum")= MYRS.RecordCount
+   MYRS.Close		
+
+   MYRS.Open "select * from webmail where mail_Type=4 and stu_no='"& session("kaohao") &"' and qst_no='"& session("passwd") & "'"
+   Session("MailsForDeleteNum")= MYRS.RecordCount
+   MYRS.Close		
+   
+   MYRS.Open "select * from webmail where mail_isnew=1 and mail_Type=1 and stu_no='"& session("kaohao") &"' and qst_no='"& session("passwd") & "'"
+   Session("MailsForReadNum")=MYRS.RecordCount
+   MYRS.Close
+
+%>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" height="16"  border="0" cellpadding="0" cellspacing="0">                             
+  <tr>                             
+    <td width="24" height="13" background="images/mail2_201.gif"></td>                             
+    <td width="991" height="13" background="images/mail2_202.gif"></td>                             
+    <td width="25" height="13" background="images/mail2_203.gif"></td>                             
+  </tr>                             
+</table>                             
+</body>                             
+</html>
